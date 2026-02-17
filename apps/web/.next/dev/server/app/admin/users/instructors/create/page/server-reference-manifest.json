@@ -1,0 +1,215 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "00bef1b00c4a741bb69b1b548539a2884dfb46efd0": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getFaculties",
+          "filename": "apps/web/actions/faculty.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "getFaculties",
+      "filename": "apps/web/actions/faculty.ts"
+    },
+    "405e23e4c1f488eff9576cc8dec324306b3640cad9": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createFaculty",
+          "filename": "apps/web/actions/faculty.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "createFaculty",
+      "filename": "apps/web/actions/faculty.ts"
+    },
+    "407bc182b1419741960b4ad086fa4b1ecce915cf8b": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteFaculty",
+          "filename": "apps/web/actions/faculty.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "deleteFaculty",
+      "filename": "apps/web/actions/faculty.ts"
+    },
+    "40f919fbe87505cfbc920038347949c99407118840": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getFacultyById",
+          "filename": "apps/web/actions/faculty.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "getFacultyById",
+      "filename": "apps/web/actions/faculty.ts"
+    },
+    "609c7a2de25fcd5560e308343c2f35d8d45156001c": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateFaculty",
+          "filename": "apps/web/actions/faculty.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "updateFaculty",
+      "filename": "apps/web/actions/faculty.ts"
+    },
+    "0007cd13dca0511f06b16ae5e4f302b0ae01697324": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getDepartments",
+          "filename": "apps/web/actions/department.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "getDepartments",
+      "filename": "apps/web/actions/department.ts"
+    },
+    "4076bbc4766f644eb8907300c7be60080ee51f80f0": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getDepartmentById",
+          "filename": "apps/web/actions/department.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "getDepartmentById",
+      "filename": "apps/web/actions/department.ts"
+    },
+    "409fb799b79e34a509d889e90f2cc3e2ebc7633c56": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteDepartment",
+          "filename": "apps/web/actions/department.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "deleteDepartment",
+      "filename": "apps/web/actions/department.ts"
+    },
+    "40b1d98b63368fd954e4728d1299fd6529a1f53738": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createDepartment",
+          "filename": "apps/web/actions/department.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "createDepartment",
+      "filename": "apps/web/actions/department.ts"
+    },
+    "60844230235d7b7f438447536dcd6fa252c29fd828": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateDepartment",
+          "filename": "apps/web/actions/department.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "rsc"
+      },
+      "exportedName": "updateDepartment",
+      "filename": "apps/web/actions/department.ts"
+    },
+    "40a9abb716dbfa5f224f8ebe401da5fc68b5ec2c91": {
+      "workers": {
+        "app/admin/users/instructors/create/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/faculty.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/department.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/personnel.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createPersonnel",
+          "filename": "apps/web/actions/personnel.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/create/page": "action-browser"
+      },
+      "exportedName": "createPersonnel",
+      "filename": "apps/web/actions/personnel.ts"
+    }
+  },
+  "edge": {}
+}

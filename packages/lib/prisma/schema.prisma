@@ -1,0 +1,1023 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// ==========================================
+// 1. Identity & Access Management
+// ==========================================
+
+enum UserRole {
+  ADMIN
+  STAFF
+  INSTRUCTOR
+  STUDENT
+  APPLICANT
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  passwordHash  String
+  role          UserRole  @default(APPLICANT)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // 2FA (Two-Factor Authentication)
+  twoFactorSecret   String?   // TOTP secret key
+  twoFactorEnabled  Boolean   @default(false)
+  twoFactorBackupCodes String? @db.Text // JSON array of backup codes
+
+  // Profile Links (One-to-One optional)
+  personnelProfile Personnel?
+  studentProfile   Student?
+  applicantProfile Applicant?
+
+  // System Logs
+  logs          SystemLog[]
+  
+  // Announcements
+  announcements Announcement[]
+  
+  // Help Articles
+  helpArticles  HelpArticle[]
+}
+
+model Personnel {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  firstName   String
+  lastName    String
+  title       String?  // e.g. Dr., Mr., Ms.
+  position    String?  // e.g. Lecturer, Registrar
+  phone       String?
+  profileImageUrl String? // Profile photo URL
+  
+  // Organization
+  facultyId   String?
+  faculty     Faculty? @relation(fields: [facultyId], references: [id])
+  departmentId String?
+  department  Department? @relation(fields: [departmentId], references: [id])
+
+  // e-Profile fields (for Instructor/Staff profiles)
+  bio             String?  @db.Text
+  expertise       String?  @db.Text  // Areas of expertise
+  education       String?  @db.Text  // Educational background
+  publications    String?  @db.Text  // Research publications
+  officeHours     String?  @db.Text  // Office hours schedule
+  officeLocation  String?            // Office room number
+  isProfilePublic Boolean  @default(true)
+
+  // Teaching
+  instructedSections ClassSection[]
+  interviewSlots     InterviewSlotInterviewer[] // Many-to-many relation
+  
+  // Schedule Management Relations
+  teachingSchedules ClassSchedule[]
+  teachingLoads     TeachingLoad[]
+  proctorDuties     ExamProctor[]
+  
+  // Advisory Role
+  advisorGroups     StudentGroup[]  // Groups this personnel advises
+  
+  // Leave Request Reviews
+  reviewedLeaveRequests LeaveRequest[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @default(now()) @updatedAt
+}
+
+// ==========================================
+// 2. Academic Structure (Master Data)
+// ==========================================
+
+model Faculty {
+  id          String       @id @default(cuid())
+  code        String       @unique // e.g. "01"
+  nameTh      String
+  nameEn      String
+  description String?      @db.Text
+  logoUrl     String?      // URL or path to faculty logo image
+  
+  departments Department[]
+  programs    Program[]
+  personnel   Personnel[]
+}
+
+model Department {
+  id          String    @id @default(cuid())
+  nameTh      String
+  nameEn      String
+  description String?   @db.Text
+  
+  facultyId   String
+  faculty     Faculty   @relation(fields: [facultyId], references: [id])
+  
+  programs    Program[]
+  personnel   Personnel[]
+}
+
+enum DegreeLevel {
+  BACHELOR
+  MASTER
+  DOCTORATE
+}
+
+model Program {
+  id          String      @id @default(cuid())
+  nameTh      String
+  nameEn      String
+  degreeLevel DegreeLevel
+  description String?     @db.Text
+  
+  // Application Control
+  isAcceptingApplications Boolean @default(true) // Controls if program is open for applications
+  
+  // Detailed Curriculum Information
+  credits               Int?        // Total credits required
+  duration              String?     // e.g. "4 years", "2 years"
+  objectives            String?     @db.Text // Program objectives
+  structure             String?     @db.Text // Curriculum structure
+  admissionRequirements String?     @db.Text // Admission requirements
+  careerOpportunities   String?     @db.Text // Career paths after graduation
+  
+  facultyId   String
+  faculty     Faculty     @relation(fields: [facultyId], references: [id])
+  departmentId String
+  department  Department  @relation(fields: [departmentId], references: [id])
+
+  applications Application[]
+  students     Student[]
+  interviewSlots InterviewSlot[]
+  courses      ProgramCourse[]
+  admissionTracks AdmissionTrack[]
+  studentGroups StudentGroup[]
+}
+
+model Course {
+  id          String   @id @default(cuid())
+  code        String   @unique // e.g. "CS101"
+  nameTh      String
+  nameEn      String
+  credits     Int
+  description String?  @db.Text
+  
+  // Learning outcomes and syllabus
+  learningOutcomes String?  @db.Text // Learning outcomes/objectives
+  syllabusUrl      String?           // URL/path to syllabus PDF file
+  
+  // Enrollment Requirements
+  minYearLevel        Int?              // Minimum year level (1-4 for Bachelor, 1-2 for Master)
+  allowedStudentTypes String?  @db.Text // JSON array of allowed StudentType (e.g., ["REGULAR", "SCHOLARSHIP"])
+  allowedPrograms     String?  @db.Text // JSON array of allowed Program IDs
+  minGpax             Float?            // Minimum GPAX required (e.g., 2.50)
+  prerequisiteCourses String?  @db.Text // JSON array of prerequisite course codes (e.g., ["CS101", "MATH101"])
+  maxEnrollment       Int?              // Maximum number of students (null = unlimited)
+  requiresApproval    Boolean  @default(false) // Requires instructor approval
+  
+  sections    ClassSection[]
+  programs    ProgramCourse[]
+
+  
+  // Schedule Management Relations
+  schedules     ClassSchedule[]
+  examSchedules ExamSchedule[]
+}
+
+
+model ProgramCourse {
+  id        String  @id @default(cuid())
+  programId String
+  program   Program @relation(fields: [programId], references: [id], onDelete: Cascade)
+  courseId  String
+  course    Course  @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  
+  isRequired Boolean @default(true) // Required or Elective
+  semester   Int?    // Recommended semester (1-8)
+  
+  @@unique([programId, courseId])
+}
+
+model AcademicTerm {
+  id        String   @id @default(cuid())
+  year      Int      // e.g. 2024
+  semester  Int      // e.g. 1, 2, 3 (Summer)
+  startDate DateTime
+  endDate   DateTime
+  isCurrent Boolean  @default(false)
+
+  sections  ClassSection[]
+  invoices  Invoice[]
+  examSchedules ExamSchedule[]
+  teachingLoads TeachingLoad[]
+  schedules     ClassSchedule[]
+
+  @@unique([year, semester])
+}
+
+// ==========================================
+// 3. Admissions System
+// ==========================================
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+model Applicant {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  firstName   String   // Stores English First Name
+  lastName    String   // Stores English Last Name
+  firstNameTh String?  // Thai First Name
+  lastNameTh  String?  // Thai Last Name
+  nationality String?  @default("Thai")
+  title       String?  // Mr, Mrs, Ms, etc.
+  citizenId   String?  @unique
+  birthDate   DateTime?
+  gender      Gender?
+  phone       String?
+  
+  // Address Information
+  address       String?  @db.Text // House No, Village, Road
+  subDistrict   String?  // Tambon
+  district      String?  // Amphoe
+  province      String?  // Changwat
+  zipCode       String?  // Postal Code
+
+  // Education - Moved to EducationHistory model
+  educationHistory EducationHistory[]
+
+  profileImageUrl String? // Profile photo URL
+
+  applications Application[]
+}
+
+model EducationHistory {
+  id          String    @id @default(cuid())
+  applicantId String
+  applicant   Applicant @relation(fields: [applicantId], references: [id], onDelete: Cascade)
+  
+  level       String    // e.g. High School, Bachelor, Master
+  degreeName  String    // e.g. Science-Math, B.Sc. Computer Science
+  institution String    // e.g. Triam Udom, Chulalongkorn University
+  gpa         String?   // e.g. 3.50 (String to preserve formatting or Float)
+  graduationYear Int?   // Optional
+}
+
+enum ApplicationStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  DOCUMENT_VERIFIED
+  INTERVIEW_READY
+  INTERVIEW_COMPLETED
+  ACCEPTED
+  REJECTED
+  ENROLLED // Converted to Student
+}
+
+// Admission Track Type (Dynamic, manageable by admin)
+model AdmissionTrackType {
+  id          String   @id @default(cuid())
+  
+  // Basic Information
+  code        String   @unique // e.g., "QUOTA", "DIRECT", "PORTFOLIO"
+  nameTh      String            // e.g., "โควต้า"
+  nameEn      String            // e.g., "Quota Admission"
+  description String?  @db.Text
+  
+  // Display Settings
+  color       String   @default("#3B82F6") // Hex color for UI
+  icon        String   @default("Target")  // Lucide icon name
+  displayOrder Int     @default(0)
+  
+  // Status
+  isActive    Boolean  @default(true)
+  isSystem    Boolean  @default(false) // System types cannot be deleted
+  
+  // Relations
+  tracks      AdmissionTrack[]
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([isActive])
+  @@index([displayOrder])
+}
+
+// Admission Track (Rounds of admission for programs)
+model AdmissionTrack {
+  id          String   @id @default(cuid())
+  
+  // Basic Information
+  code        String   @unique // e.g., "CS-QUOTA-2024-1"
+  nameTh      String            // e.g., "รอบที่ 1 โควต้า"
+  nameEn      String            // e.g., "Round 1: Quota Admission"
+  description String?  @db.Text
+  
+  // Track Type Relation
+  typeId      String
+  type        AdmissionTrackType @relation(fields: [typeId], references: [id])
+  
+  // Program Relation
+  programId   String
+  program     Program            @relation(fields: [programId], references: [id])
+  
+  // Timeline
+  academicYear String            // e.g., "2024"
+  openDate    DateTime
+  closeDate   DateTime
+  announceDate DateTime?         // Result announcement date
+  
+  // Capacity Management
+  totalSeats  Int
+  filledSeats Int               @default(0)
+  reservedSeats Int?            // Optional reserved seats
+  enableWaitlist Boolean        @default(false)
+  
+  // Requirements (JSON for flexibility)
+  requirements String?  @db.Text // JSON: { minGPA: 2.5, documents: [...], etc. }
+  
+  // Fees
+  applicationFee Float?
+  
+  // Status & Visibility
+  isActive    Boolean  @default(true)
+  isPublished Boolean  @default(false) // Visible to public
+  displayOrder Int     @default(0)
+  
+  // Relations
+  applications Application[]
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([programId])
+  @@index([typeId])
+  @@index([academicYear])
+  @@index([isActive, isPublished])
+  @@index([openDate, closeDate])
+}
+
+model Application {
+  id            String            @id @default(cuid())
+  applicantId   String
+  applicant     Applicant         @relation(fields: [applicantId], references: [id])
+  
+  // Admission Track Relation (NEW)
+  trackId       String?           // Nullable for migration, should be required later
+  track         AdmissionTrack?   @relation(fields: [trackId], references: [id])
+  
+  programId     String
+  program       Program           @relation(fields: [programId], references: [id])
+  
+  status        ApplicationStatus @default(DRAFT)
+  submittedAt   DateTime?
+  
+  documents     Document[]
+  interview     InterviewResult?
+  
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  
+  @@index([trackId])
+  @@index([programId])
+  @@index([applicantId])
+  @@index([status])
+}
+
+model Document {
+  id            String      @id @default(cuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  
+  type          String      // e.g. "TRANSCRIPT", "ID_CARD"
+  url           String
+  uploadedAt    DateTime    @default(now())
+}
+
+model InterviewSlot {
+  id            String      @id @default(cuid())
+  startTime     DateTime
+  endTime       DateTime
+  location      String?     // Physical room or Zoom link
+  
+  // Coordinator contact information
+  coordinatorName  String?
+  coordinatorPhone String?
+  description      String?   @db.Text // Additional details for interviewees
+  
+  programId     String?
+  program       Program?    @relation(fields: [programId], references: [id])
+
+  interviewResults InterviewResult[]
+  interviewers    InterviewSlotInterviewer[] // Many-to-many relation
+}
+
+// Junction table for many-to-many relationship between InterviewSlot and Personnel
+model InterviewSlotInterviewer {
+  id              String        @id @default(cuid())
+  slotId          String
+  slot            InterviewSlot @relation(fields: [slotId], references: [id], onDelete: Cascade)
+  interviewerId   String
+  interviewer     Personnel     @relation(fields: [interviewerId], references: [id])
+  
+  @@unique([slotId, interviewerId])
+}
+
+model InterviewResult {
+  id            String        @id @default(cuid())
+  applicationId String        @unique
+  application   Application   @relation(fields: [applicationId], references: [id])
+  
+  slotId        String
+  slot          InterviewSlot @relation(fields: [slotId], references: [id])
+  
+  score         Int?
+  comments      String?       @db.Text
+  isPassed      Boolean?
+
+  // Attendance Confirmation
+  confirmedAt         DateTime?
+  rescheduleRequested Boolean   @default(false)
+  rescheduleReason    String?   @db.Text
+  checkedInAt         DateTime?
+
+  feedback            InterviewFeedback?
+}
+
+model InterviewFeedback {
+  id                String          @id @default(cuid())
+  interviewResultId String          @unique
+  interviewResult   InterviewResult @relation(fields: [interviewResultId], references: [id])
+  
+  rating            Int             // 1-5
+  comment           String?         @db.Text
+  
+  createdAt         DateTime        @default(now())
+}
+
+// ==========================================
+// 4. Student Information & Academic Records
+// ==========================================
+
+enum StudentType {
+  REGULAR       // นักศึกษาปกติ
+  EXCHANGE      // นักศึกษาแลกเปลี่ยน
+  SCHOLARSHIP   // นักศึกษาทุน
+  SPECIAL       // นักศึกษาพิเศษ
+  TRANSFER      // นักศึกษาโอนย้าย
+  INTERNATIONAL // นักศึกษานานาชาติ
+}
+
+enum StudentStatus {
+  STUDYING
+  ON_LEAVE
+  GRADUATED
+  WITHDRAWN
+  DISMISSED
+}
+
+// Student Group - For organizing students by admission year and section
+// Example: "Computer Science 2024 - Group A"
+model StudentGroup {
+  id            String    @id @default(cuid())
+  name          String    // e.g. "Group A", "Section 1", "ห้อง 1"
+  
+  // Academic Year (for calculating year level)
+  admissionYear Int       // e.g. 2024 = Year 1 students who entered in 2024
+  
+  // Program relation
+  programId     String
+  program       Program   @relation(fields: [programId], references: [id])
+  
+  // Optional advisor for this group
+  advisorId     String?
+  advisor       Personnel? @relation(fields: [advisorId], references: [id])
+  
+  // Relationships
+  students      Student[]
+  sections      ClassSection[]  // Class sections assigned to this group
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Prevent duplicate group names in the same program and year
+  @@unique([programId, admissionYear, name])
+  @@index([programId])
+  @@index([admissionYear])
+}
+
+model Student {
+  id          String        @id @default(cuid())
+  studentId   String        @unique // Generated ID e.g. 66010001
+  userId      String        @unique
+  user        User          @relation(fields: [userId], references: [id])
+  
+  // Personal Information
+  title       String?       // Mr, Mrs, Ms, etc.
+  firstName   String
+  lastName    String
+  firstNameTh String?       // Thai First Name
+  lastNameTh  String?       // Thai Last Name
+  nationality String?       @default("Thai")
+  citizenId   String?       // Citizen ID or Passport
+  birthDate   DateTime
+  gender      Gender?
+  phone       String?
+  profileImageUrl String?   // Profile photo URL
+  
+  // Address Information
+  address       String?  @db.Text // House No, Village, Road
+  subDistrict   String?  // Tambon
+  district      String?  // Amphoe
+  province      String?  // Changwat
+  zipCode       String?  // Postal Code
+  
+  programId   String
+  program     Program       @relation(fields: [programId], references: [id])
+  
+  studentType StudentType   @default(REGULAR)
+  status      StudentStatus @default(STUDYING)
+  gpax        Float         @default(0.00)
+  
+  // e-Profile fields
+  bio             String?  @db.Text
+  interests       String?  @db.Text
+  skills          String?  @db.Text
+  socialLinks     String?  @db.Text  // JSON format: {"linkedin": "url", "github": "url"}
+  isProfilePublic Boolean  @default(true)
+  showGPA         Boolean  @default(false)
+  
+  // Academic Year & Group
+  admissionYear   Int?              // Year of admission (e.g. 2024)
+  studentGroupId  String?
+  studentGroup    StudentGroup?     @relation(fields: [studentGroupId], references: [id])
+  
+  enrollments Enrollment[]
+  invoices    Invoice[]
+  leaveRequests LeaveRequest[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @default(now()) @updatedAt
+}
+
+model ClassSection {
+  id            String       @id @default(cuid())
+  courseId      String
+  course        Course       @relation(fields: [courseId], references: [id])
+  termId        String
+  term          AcademicTerm @relation(fields: [termId], references: [id])
+  
+  sectionNumber String       // e.g. "001"
+  capacity      Int
+  
+  instructorId  String?
+  instructor    Personnel?   @relation(fields: [instructorId], references: [id])
+  
+  schedules      ClassSchedule[]
+  enrollments    Enrollment[]
+  studentGroups  StudentGroup[]  // Target groups for this section
+}
+
+enum DayOfWeek {
+  MON
+  TUE
+  WED
+  THU
+  FRI
+  SAT
+  SUN
+}
+
+model ClassSchedule {
+  id          String       @id @default(cuid())
+  sectionId   String
+  section     ClassSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  
+  day         DayOfWeek
+  startTime   String       // e.g. "09:00"
+  endTime     String       // e.g. "12:00"
+  roomId      String?
+  room        Room?        @relation(fields: [roomId], references: [id])
+
+  // New relations for Schedule Management
+  courseId    String?
+  course      Course?      @relation(fields: [courseId], references: [id])
+  
+  instructorId String?
+  instructor   Personnel?  @relation(fields: [instructorId], references: [id])
+  
+  termId      String?
+  term        AcademicTerm? @relation(fields: [termId], references: [id])
+}
+
+model Enrollment {
+  id          String       @id @default(cuid())
+  studentId   String
+  student     Student      @relation(fields: [studentId], references: [id])
+  sectionId   String
+  section     ClassSection @relation(fields: [sectionId], references: [id])
+  
+  grade       String?      // e.g. "A", "B+", "F"
+  enrolledAt  DateTime     @default(now())
+
+  @@unique([studentId, sectionId])
+}
+
+// ==========================================
+// 5. Financial System
+// ==========================================
+
+enum InvoiceStatus {
+  PENDING
+  PAID
+  CANCELLED
+  OVERDUE
+}
+
+model Invoice {
+  id          String        @id @default(cuid())
+  studentId   String
+  student     Student       @relation(fields: [studentId], references: [id])
+  termId      String
+  term        AcademicTerm  @relation(fields: [termId], references: [id])
+  
+  amount      Decimal       @db.Decimal(10, 2)
+  dueDate     DateTime
+  status      InvoiceStatus @default(PENDING)
+  
+  items       InvoiceItem[]
+  payments    Payment[]
+  
+  createdAt   DateTime      @default(now())
+}
+
+model InvoiceItem {
+  id          String   @id @default(cuid())
+  invoiceId   String
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  
+  description String
+  amount      Decimal  @db.Decimal(10, 2)
+}
+
+model Payment {
+  id          String   @id @default(cuid())
+  invoiceId   String
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id])
+  
+  amount      Decimal  @db.Decimal(10, 2)
+  slipUrl     String?
+  paidAt      DateTime @default(now())
+  verifiedAt  DateTime?
+  verifiedBy  String?  // Admin User ID
+}
+
+// ==========================================
+// 6. Communication & Content (CMS)
+// ==========================================
+
+enum AnnouncementTarget {
+  ALL
+  STUDENTS
+  INSTRUCTORS
+  STAFF
+}
+
+model Announcement {
+  id          String              @id @default(cuid())
+  title       String
+  imageUrl    String? // Image for announcement
+  content     String              @db.Text
+  target      AnnouncementTarget  @default(ALL)
+  isPublished Boolean             @default(false)
+  publishedAt DateTime?
+  
+  authorId    String
+  author      User                @relation(fields: [authorId], references: [id])
+  
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+}
+
+model Banner {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  imageUrl    String
+  linkUrl     String?
+  isActive    Boolean  @default(true)
+  order       Int      @default(0)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// 7. AI Chatbot (Module 13)
+// ==========================================
+
+model AiSettings {
+  id             String   @id @default(cuid())
+  botName        String   @default("Nong Dee-Jai")
+  welcomeMessage String   @default("Hello! How can I help you today?")
+  personality    String   @default("Friendly and helpful")
+  isActive       Boolean  @default(true)
+  updatedAt      DateTime @updatedAt
+}
+
+model AiKnowledgeBase {
+  id        String   @id @default(cuid())
+  question  String   @db.Text
+  answer    String   @db.Text
+  category  String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AiConversation {
+  id        String      @id @default(cuid())
+  userId    String?     // Optional, for logged-in users
+  sessionId String?     // For anonymous users
+  messages  AiMessage[]
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model AiMessage {
+  id             String         @id @default(cuid())
+  conversationId String
+  conversation   AiConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role           String         // "user" or "assistant"
+  content        String         @db.Text
+  createdAt      DateTime       @default(now())
+}
+
+// 8. Help Center (Module 14)
+// ==========================================
+
+enum HelpArticleVisibility {
+  PUBLIC
+  STUDENT
+  INSTRUCTOR
+  STAFF
+  ADMIN
+}
+
+model HelpCategory {
+  id          String        @id @default(cuid())
+  name        String
+  description String?
+  order       Int           @default(0)
+  articles    HelpArticle[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model HelpArticle {
+  id         String                 @id @default(cuid())
+  title      String
+  content    String                 @db.Text
+  categoryId String
+  category   HelpCategory           @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  visibility HelpArticleVisibility  @default(PUBLIC)
+  isPublished Boolean                @default(false)
+  authorId   String
+  author     User                   @relation(fields: [authorId], references: [id])
+  views      Int                    @default(0)
+  createdAt  DateTime               @default(now())
+  updatedAt  DateTime               @updatedAt
+}
+
+// 9. System Settings (Module 15)
+// ==========================================
+
+model SystemSettings {
+  id                String   @id @default(cuid())
+  universityName    String   @default("University MS")
+  universityNameTh  String   @default("ระบบจัดการข้อมูลมหาวิทยาลัย")
+  logoUrl           String?
+  primaryColor      String   @default("#033675")
+  secondaryColor    String   @default("#03ccba")
+  backgroundColor   String   @default("#ffffff")
+  studentIdFormat   String   @default("STD{YEAR}{FACULTY}{NUMBER}")
+  defaultLanguage   String   @default("en")
+  
+  // Mail Server Settings
+  smtpHost          String?
+  smtpPort          Int      @default(587)
+  smtpUser          String?
+  smtpPassword      String?
+  smtpSecure        Boolean  @default(false)
+  smtpFromEmail     String   @default("noreply@ums.ac.th")
+  smtpFromName      String   @default("UMS Admissions")
+
+  updatedAt         DateTime @updatedAt
+}
+
+model SystemLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  action    String
+  details   String?  @db.Text
+  ipAddress String?
+  createdAt DateTime @default(now())
+}
+
+// ==========================================
+// 10. Internationalization (i18n)
+// ==========================================
+
+model Translation {
+  id        String   @id @default(cuid())
+  key       String   @unique // e.g. "common.welcome"
+  th        String   @db.Text
+  en        String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ==========================================
+// 11. Schedule Management System
+// ==========================================
+
+model Room {
+  id          String   @id @default(cuid())
+  code        String   @unique // e.g., "B101", "LAB-CS-01"
+  name        String   // e.g., "Computer Lab 1"
+  building    String   // e.g., "Building A"
+  floor       Int      // Floor number
+  capacity    Int      // Seat capacity
+  roomType    RoomType
+  facilities  String?  @db.Text // JSON string
+  isActive    Boolean  @default(true)
+  isAvailable Boolean  @default(true)
+  
+  schedules   ClassSchedule[]
+  examSlots   ExamSlot[]
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([building, floor])
+  @@index([roomType])
+}
+
+enum RoomType {
+  LECTURE_ROOM
+  LABORATORY
+  COMPUTER_LAB
+  STUDIO
+  SEMINAR_ROOM
+  AUDITORIUM
+  SPORTS_FACILITY
+  OTHER
+}
+
+model ExamSchedule {
+  id            String       @id @default(cuid())
+  courseId      String
+  course        Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  section       String
+  termId        String
+  term          AcademicTerm @relation(fields: [termId], references: [id], onDelete: Cascade)
+  examType      ExamType
+  examSlots     ExamSlot[]
+  examDate      DateTime
+  startTime     String
+  endTime       String
+  duration      Int
+  examFormat    ExamFormat   @default(CLOSED_BOOK)
+  instructions  String?      @db.Text
+  isPublished   Boolean      @default(false)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@unique([courseId, section, termId, examType])
+  @@index([termId, examType])
+  @@index([examDate])
+}
+
+enum ExamType {
+  MIDTERM
+  FINAL
+  QUIZ
+  MAKEUP
+}
+
+enum ExamFormat {
+  CLOSED_BOOK
+  OPEN_BOOK
+  TAKE_HOME
+  ONLINE
+  PRACTICAL
+}
+
+model ExamSlot {
+  id              String        @id @default(cuid())
+  examScheduleId  String
+  examSchedule    ExamSchedule  @relation(fields: [examScheduleId], references: [id], onDelete: Cascade)
+  roomId          String
+  room            Room          @relation(fields: [roomId], references: [id], onDelete: Restrict)
+  capacity        Int
+  assignedCount   Int           @default(0)
+  proctors        ExamProctor[]
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([examScheduleId])
+  @@index([roomId])
+}
+
+model ExamProctor {
+  id          String     @id @default(cuid())
+  examSlotId  String
+  examSlot    ExamSlot   @relation(fields: [examSlotId], references: [id], onDelete: Cascade)
+  proctorId   String
+  proctor     Personnel  @relation(fields: [proctorId], references: [id], onDelete: Cascade)
+  role        ProctorRole @default(ASSISTANT)
+  isConfirmed Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@unique([examSlotId, proctorId])
+  @@index([proctorId])
+}
+
+enum ProctorRole {
+  CHIEF
+  ASSISTANT
+}
+
+model TeachingLoad {
+  id            String       @id @default(cuid())
+  instructorId  String
+  instructor    Personnel    @relation(fields: [instructorId], references: [id], onDelete: Cascade)
+  termId        String
+  term          AcademicTerm @relation(fields: [termId], references: [id], onDelete: Cascade)
+  lectureHours  Float        @default(0)
+  labHours      Float        @default(0)
+  totalHours    Float        @default(0)
+  courseCount   Int          @default(0)
+  isApproved    Boolean      @default(false)
+  approvedBy    String?
+  approvedAt    DateTime?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@unique([instructorId, termId])
+  @@index([termId])
+}
+
+// ==========================================
+// Leave Management
+// ==========================================
+
+enum LeaveRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model LeaveRequest {
+  id          String             @id @default(cuid())
+  studentId   String
+  student     Student            @relation(fields: [studentId], references: [id])
+  
+  // Leave Details
+  reason      String             @db.Text
+  startDate   DateTime
+  endDate     DateTime
+  
+  // Status & Review
+  status      LeaveRequestStatus @default(PENDING)
+  reviewedBy  String?
+  reviewer    Personnel?         @relation(fields: [reviewedBy], references: [id])
+  reviewedAt  DateTime?
+  reviewNote  String?            @db.Text
+  
+  // Documents
+  documentUrl String?
+  
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+  
+  @@index([studentId])
+  @@index([status])
+}

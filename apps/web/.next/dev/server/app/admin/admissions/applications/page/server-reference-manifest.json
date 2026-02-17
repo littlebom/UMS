@@ -1,0 +1,125 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "0046c7bc20a8a6183f2563894fa7b6f4c4167eaecf": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getMyApplications",
+          "filename": "apps/web/actions/application.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "rsc"
+      },
+      "exportedName": "getMyApplications",
+      "filename": "apps/web/actions/application.ts"
+    },
+    "00c8a9d05e4aa2d495e395807304f7654517e301e7": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAllApplications",
+          "filename": "apps/web/actions/application.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "rsc"
+      },
+      "exportedName": "getAllApplications",
+      "filename": "apps/web/actions/application.ts"
+    },
+    "407de415e597e1ada990e2868a59e05cf498cbe204": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "submitApplication",
+          "filename": "apps/web/actions/application.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "rsc"
+      },
+      "exportedName": "submitApplication",
+      "filename": "apps/web/actions/application.ts"
+    },
+    "40fc594e8b504c207c3b56ae3834e8e202663a13d5": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getApplicationById",
+          "filename": "apps/web/actions/application.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "rsc"
+      },
+      "exportedName": "getApplicationById",
+      "filename": "apps/web/actions/application.ts"
+    },
+    "604acfa5a8097ceeeb3cefe0deb166d944fdb50754": {
+      "workers": {
+        "app/admin/admissions/applications/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/admissions/applications/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/application.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateApplicationStatus",
+          "filename": "apps/web/actions/application.ts"
+        }
+      },
+      "layer": {
+        "app/admin/admissions/applications/page": "rsc"
+      },
+      "exportedName": "updateApplicationStatus",
+      "filename": "apps/web/actions/application.ts"
+    }
+  },
+  "edge": {}
+}

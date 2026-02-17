@@ -1,0 +1,155 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "4073dbbda55cac31da933c408c09372119de61ad76": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createClassSchedule",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "createClassSchedule",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "407fd585b7b66b62c915ad2293f7db0d3b5397d240": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getClassSchedules",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "getClassSchedules",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "4096a48455b5adaa0c442b4c40a4c8cf01cc7d19b0": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getWeeklyTimetable",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "getWeeklyTimetable",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "409fd56ea6ab34c08dff7140c43a0ec69603987c2b": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getScheduleStats",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "getScheduleStats",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "40b1e93f2319db56123aaf3a43435e4208f4b637a1": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getScheduleById",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "getScheduleById",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "40d76a1099300f6ec09334bc4b02a7ebd536faebb3": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteClassSchedule",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "deleteClassSchedule",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    },
+    "6089342d5b6220a200fc2208b17dcf1cd06c5a5241": {
+      "workers": {
+        "app/admin/schedule/timetable/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/timetable/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-timetable.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateClassSchedule",
+          "filename": "apps/web/actions/schedule-timetable.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/timetable/page": "rsc"
+      },
+      "exportedName": "updateClassSchedule",
+      "filename": "apps/web/actions/schedule-timetable.ts"
+    }
+  },
+  "edge": {}
+}

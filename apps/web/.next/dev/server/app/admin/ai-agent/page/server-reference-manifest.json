@@ -1,0 +1,230 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "009b75996dec458e430b34dbc60c17107d9bdbbaef": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAiSettings",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "getAiSettings",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "00e36b4800950908828cd7fe8977f049b5df21ee63": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getKnowledgeBaseItems",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "getKnowledgeBaseItems",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "401b61ba13616d6d4fcc534c594bb9ffec07e0e89d": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getConversationMessages",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "getConversationMessages",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "402e30de12c19e84eaba61f94a74e395001c6c300e": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createKnowledgeBaseItem",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "createKnowledgeBaseItem",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "407a375bae0ddb9d5085e49b0ea95a24f7c98b24e4": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteKnowledgeBaseItem",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "deleteKnowledgeBaseItem",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "407dc370f61bf92dab74559686f23b3ccc582ce99f": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateAiSettings",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "updateAiSettings",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "605c38fc64737e0e6141b0ba9926b445619bcd4d52": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "sendMessageToAi",
+          "filename": "apps/web/actions/ai.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "sendMessageToAi",
+      "filename": "apps/web/actions/ai.ts"
+    },
+    "001a68931728d2f39ffd97a8ffc30f15808c5ce6a2": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutApplicant",
+          "filename": "apps/web/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "logoutApplicant",
+      "filename": "apps/web/actions/auth.ts"
+    },
+    "0045601a2845d399df52f5438441f3026b65823e7d": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getApplicantSession",
+          "filename": "apps/web/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "getApplicantSession",
+      "filename": "apps/web/actions/auth.ts"
+    },
+    "0063b6f134750ea789b31463ec6205679ea2b64a02": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAdminSession",
+          "filename": "apps/web/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "getAdminSession",
+      "filename": "apps/web/actions/auth.ts"
+    },
+    "408f6721a5f41acdab580aa8d87b0b8cf6bb42b51d": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "registerApplicant",
+          "filename": "apps/web/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "registerApplicant",
+      "filename": "apps/web/actions/auth.ts"
+    },
+    "40c4e9510a3e7dde545afcc668fed7b1334f615ff5": {
+      "workers": {
+        "app/admin/ai-agent/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/ai-agent/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/ai.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "loginApplicant",
+          "filename": "apps/web/actions/auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/ai-agent/page": "rsc"
+      },
+      "exportedName": "loginApplicant",
+      "filename": "apps/web/actions/auth.ts"
+    }
+  },
+  "edge": {}
+}

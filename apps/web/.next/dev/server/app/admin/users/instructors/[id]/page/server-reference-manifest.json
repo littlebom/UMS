@@ -1,0 +1,110 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "00c6864fcb4b07e60f02a72f68ae5fa4c423129054": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInstructorStats",
+          "filename": "apps/web/actions/user-instructors.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "rsc"
+      },
+      "exportedName": "getInstructorStats",
+      "filename": "apps/web/actions/user-instructors.ts"
+    },
+    "400a3e532e7cf1cb18583c94fc3832adfc252ea15d": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteInstructor",
+          "filename": "apps/web/actions/user-instructors.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "rsc"
+      },
+      "exportedName": "deleteInstructor",
+      "filename": "apps/web/actions/user-instructors.ts"
+    },
+    "404ce9b1d8a5a4965230428e679315c7e2160621a2": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInstructorById",
+          "filename": "apps/web/actions/user-instructors.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "rsc"
+      },
+      "exportedName": "getInstructorById",
+      "filename": "apps/web/actions/user-instructors.ts"
+    },
+    "4059d0c789086449b36698910c0668c7d569850cce": {
+      "workers": {
+        "app/admin/users/instructors/[id]/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/instructors/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-instructors.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInstructors",
+          "filename": "apps/web/actions/user-instructors.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/instructors/[id]/page": "rsc"
+      },
+      "exportedName": "getInstructors",
+      "filename": "apps/web/actions/user-instructors.ts"
+    }
+  },
+  "edge": {}
+}

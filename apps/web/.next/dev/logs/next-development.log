@@ -1,0 +1,52 @@
+[00:00:01.610] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.760] Server  LOG      ✓ Ready in 1546ms
+[00:00:06.652] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+
+[00:00:06.751] Server  LOG     [Rate Limit Cleanup] Scheduler started (runs every 1 hour)
+[00:00:07.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.033] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+
+[00:00:07.123] Server  LOG     prisma:query "SELECT `ums`.`Banner`.`id`, `ums`.`Banner`.`title`, `ums`.`Banner`.`description`, `ums`.`Banner`.`imageUrl`, `ums`.`Banner`.`linkUrl`, `ums`.`Banner`.`isActive`, `ums`.`Banner`.`order`, `ums`.`Banner`.`createdAt`, `ums`.`Banner`.`updatedAt` FROM `ums`.`Banner` WHERE `ums`.`Banner`.`isActive` = ? ORDER BY `ums`.`Banner`.`order` ASC"
+[00:00:07.156] Server  LOG     prisma:query "SELECT `ums`.`Translation`.`id`, `ums`.`Translation`.`key`, `ums`.`Translation`.`th`, `ums`.`Translation`.`en`, `ums`.`Translation`.`createdAt`, `ums`.`Translation`.`updatedAt` FROM `ums`.`Translation` WHERE 1=1"
+[00:00:07.165] Server  LOG     prisma:query "SELECT `ums`.`Announcement`.`id`, `ums`.`Announcement`.`title`, `ums`.`Announcement`.`imageUrl`, `ums`.`Announcement`.`content`, `ums`.`Announcement`.`target`, `ums`.`Announcement`.`isPublished`, `ums`.`Announcement`.`publishedAt`, `ums`.`Announcement`.`authorId`, `ums`.`Announcement`.`createdAt`, `ums`.`Announcement`.`updatedAt` FROM `ums`.`Announcement` WHERE (`ums`.`Announcement`.`isPublished` = ? AND `ums`.`Announcement`.`target` = ?) ORDER BY `ums`.`Announcement`.`publishedAt` DESC LIMIT ? OFFSET ?"
+[00:00:07.171] Server  LOG     prisma:query "SELECT `ums`.`AiSettings`.`id`, `ums`.`AiSettings`.`botName`, `ums`.`AiSettings`.`welcomeMessage`, `ums`.`AiSettings`.`personality`, `ums`.`AiSettings`.`isActive`, `ums`.`AiSettings`.`updatedAt` FROM `ums`.`AiSettings` WHERE 1=1 LIMIT ? OFFSET ?"
+[00:00:07.249] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+
+[00:00:07.314] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+
+[00:00:07.461] Server  LOG     prisma:query "SELECT `ums`.`SystemSettings`.`id`, `ums`.`SystemSettings`.`universityName`, `ums`.`SystemSettings`.`universityNameTh`, `ums`.`SystemSettings`.`logoUrl`, `ums`.`SystemSettings`.`primaryColor`, `ums`.`SystemSettings`.`secondaryColor`, `ums`.`SystemSettings`.`backgroundColor`, `ums`.`SystemSettings`.`studentIdFormat`, `ums`.`SystemSettings`.`defaultLanguage`, `ums`.`SystemSettings`.`smtpHost`, `ums`.`SystemSettings`.`smtpPort`, `ums`.`SystemSettings`.`smtpUser`, `ums`.`SystemSettings`.`smtpPassword`, `ums`.`SystemSettings`.`smtpSecure`, `ums`.`SystemSettings`.`smtpFromEmail`, `ums`.`SystemSettings`.`smtpFromName`, `ums`.`SystemSettings`.`updatedAt` FROM `ums`.`SystemSettings` WHERE 1=1 LIMIT ? OFFSET ?"
+[00:00:07.466] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+
+[00:00:07.471] Server  LOG     prisma:query "SELECT `ums`.`SystemSettings`.`id`, `ums`.`SystemSettings`.`universityName`, `ums`.`SystemSettings`.`universityNameTh`, `ums`.`SystemSettings`.`logoUrl`, `ums`.`SystemSettings`.`primaryColor`, `ums`.`SystemSettings`.`secondaryColor`, `ums`.`SystemSettings`.`backgroundColor`, `ums`.`SystemSettings`.`studentIdFormat`, `ums`.`SystemSettings`.`defaultLanguage`, `ums`.`SystemSettings`.`smtpHost`, `ums`.`SystemSettings`.`smtpPort`, `ums`.`SystemSettings`.`smtpUser`, `ums`.`SystemSettings`.`smtpPassword`, `ums`.`SystemSettings`.`smtpSecure`, `ums`.`SystemSettings`.`smtpFromEmail`, `ums`.`SystemSettings`.`smtpFromName`, `ums`.`SystemSettings`.`updatedAt` FROM `ums`.`SystemSettings` WHERE 1=1 LIMIT ? OFFSET ?"
+[00:01:57.304] Server  WARN     ⚠ ./packages/lib
+Package @prisma/client can't be external
+The request @prisma/client matches serverExternalPackages (or the default list).
+The package resolves to a different version when requested from the project directory (7.0.1) compared to the package requested from the importing module (5.22.0).
+Make sure to install the same version of the package in both locations.
+
+

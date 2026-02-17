@@ -1,0 +1,110 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "0087613d911737dfe742f748d9aaef033abf85af65": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAdministratorStats",
+          "filename": "apps/web/actions/user-staff-admins.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "rsc"
+      },
+      "exportedName": "getAdministratorStats",
+      "filename": "apps/web/actions/user-staff-admins.ts"
+    },
+    "0090bedb8a704d18c467fdb712701f5043b61ade1f": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStaffStats",
+          "filename": "apps/web/actions/user-staff-admins.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "rsc"
+      },
+      "exportedName": "getStaffStats",
+      "filename": "apps/web/actions/user-staff-admins.ts"
+    },
+    "40629a98669764f16da89aa776fddd8daf362d9061": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAdministrators",
+          "filename": "apps/web/actions/user-staff-admins.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "rsc"
+      },
+      "exportedName": "getAdministrators",
+      "filename": "apps/web/actions/user-staff-admins.ts"
+    },
+    "40f4d2e0d2b885b1238891ca23b16693a0e92e6d81": {
+      "workers": {
+        "app/admin/users/staff/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/staff/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-staff-admins.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStaff",
+          "filename": "apps/web/actions/user-staff-admins.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/staff/page": "rsc"
+      },
+      "exportedName": "getStaff",
+      "filename": "apps/web/actions/user-staff-admins.ts"
+    }
+  },
+  "edge": {}
+}

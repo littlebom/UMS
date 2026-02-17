@@ -1,0 +1,140 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "0071f873c1045454a303773abfaa03690373411892": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getPublicAdmissionTracks",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "getPublicAdmissionTracks",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "4002460a4c74320dde93f01a3d643b813502c87ce5": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAdmissionTracks",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "getAdmissionTracks",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "404f47bac2ba17a56a657ba851aecdc4cd7dd2aef9": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAdmissionTrackById",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "getAdmissionTrackById",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "40ba1b86f29fd9c23ab001b00134cbe4a7557d34d2": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteAdmissionTrack",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "deleteAdmissionTrack",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "40c007c85f6076ae20ba2729b3064b25e4a2b18851": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createAdmissionTrack",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "createAdmissionTrack",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "40d3f01507251ab51e65f102062abb7f2b05afc5e1": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkTrackAvailability",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "checkTrackAvailability",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "60991a87adf623df7a22f3ea91e282f2b48228373c": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateAdmissionTrack",
+          "filename": "apps/web/actions/admission-track.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "rsc"
+      },
+      "exportedName": "updateAdmissionTrack",
+      "filename": "apps/web/actions/admission-track.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admissions/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admission-track.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    }
+  },
+  "edge": {}
+}

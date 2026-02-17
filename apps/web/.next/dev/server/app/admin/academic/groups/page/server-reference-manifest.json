@@ -1,0 +1,320 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "402afe96257a83a6508e80cfd3fff0130565464bae": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentGroupById",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getStudentGroupById",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "402dcba9ecc50d7de93bbcd7fce3af4e6781e344ba": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentGroupsWithYearLevel",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getStudentGroupsWithYearLevel",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "4050208e4d90398286114e1600f3ebd3292651face": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentGroups",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getStudentGroups",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "405b92423cdb1029387bdca05b54b84bcec2b67284": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createStudentGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "createStudentGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "406c8db0422fcc6cff2a628e110208ab7992b75e0f": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteStudentGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "action-browser"
+      },
+      "exportedName": "deleteStudentGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "40707d3c53fce3a7da3a9c07cedea7b0a45bb68300": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getGroupTimetable",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getGroupTimetable",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "4087a1dfefee6e3aed54e57c9dc0c531f3f1e4f957": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "removeStudentsFromGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "removeStudentsFromGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "40a4f42c7df4213b3ad8a0efbb523470789243cae0": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getUnassignedStudents",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getUnassignedStudents",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "604e6b0590d36314a5115a7c3e516f47a1fcc2737d": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateStudentGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "updateStudentGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "60c1dbacac3e32b9113422045facf7291516d8ff73": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "addSectionToGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "addSectionToGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "60cdc3b332beb1c0f54c33661867f20630d31d3def": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "assignStudentsToGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "assignStudentsToGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "60f3514fb2f049bcbdaf4cf8fa96865ee05bd05134": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "removeSectionFromGroup",
+          "filename": "apps/web/actions/student-group.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "removeSectionFromGroup",
+      "filename": "apps/web/actions/student-group.ts"
+    },
+    "004e5f690213c9f35e876ce2ab9b7a7a1806d535ed": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCourses",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getCourses",
+      "filename": "apps/web/actions/program.ts"
+    },
+    "00720d3b7b152044118128e1c5428c56f846c3f27a": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getPrograms",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getPrograms",
+      "filename": "apps/web/actions/program.ts"
+    },
+    "406ac3f7c742d84850f249b243cd0d75d76652cc6f": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getProgramById",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "getProgramById",
+      "filename": "apps/web/actions/program.ts"
+    },
+    "40748706269859e655dca8ce99cfe0ba7bad230b31": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteProgram",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "deleteProgram",
+      "filename": "apps/web/actions/program.ts"
+    },
+    "40fec5913b9b6e4cbb88b5a91f9c2e868d007fd8d8": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createProgram",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "createProgram",
+      "filename": "apps/web/actions/program.ts"
+    },
+    "603a93e7b254e1decf103d59e7f33c5b6eb072f4d4": {
+      "workers": {
+        "app/admin/academic/groups/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/academic/groups/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/student-group.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/program.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateProgram",
+          "filename": "apps/web/actions/program.ts"
+        }
+      },
+      "layer": {
+        "app/admin/academic/groups/page": "rsc"
+      },
+      "exportedName": "updateProgram",
+      "filename": "apps/web/actions/program.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,80 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/curriculum/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/curriculum/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/curriculum.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/curriculum/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "0071dc3156bcbb109cde68af7874a1d4f8ac582969": {
+      "workers": {
+        "app/curriculum/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/curriculum/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/curriculum.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getPrograms",
+          "filename": "apps/web/actions/curriculum.ts"
+        }
+      },
+      "layer": {
+        "app/curriculum/page": "rsc"
+      },
+      "exportedName": "getPrograms",
+      "filename": "apps/web/actions/curriculum.ts"
+    },
+    "00fb89661b8e7e0f3d7e86eb4448d0d8ad7169830b": {
+      "workers": {
+        "app/curriculum/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/curriculum/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/curriculum.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getFaculties",
+          "filename": "apps/web/actions/curriculum.ts"
+        }
+      },
+      "layer": {
+        "app/curriculum/page": "rsc"
+      },
+      "exportedName": "getFaculties",
+      "filename": "apps/web/actions/curriculum.ts"
+    },
+    "40d0c7543d91af2a9f5214975498cf21f2fbd13032": {
+      "workers": {
+        "app/curriculum/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/curriculum/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/curriculum.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getProgramById",
+          "filename": "apps/web/actions/curriculum.ts"
+        }
+      },
+      "layer": {
+        "app/curriculum/page": "rsc"
+      },
+      "exportedName": "getProgramById",
+      "filename": "apps/web/actions/curriculum.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/curriculum/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/curriculum/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/curriculum.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/curriculum/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,140 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "40c8cfc30a042c2ce257e8d4e5789b44fdf3c7c763": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTeachingStats",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "getTeachingStats",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    },
+    "40e83e70252f715ce20dd37b44f33d0af5e89e819b": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "recalculateAllTeachingLoads",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "recalculateAllTeachingLoads",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    },
+    "40e9af18d61f6e4d857b4c618658c6f430d76e7a90": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTeachingLoads",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "getTeachingLoads",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    },
+    "6097a8fc8f35c7d77bca35c370d572deffd3fe424e": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "approveTeachingLoad",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "approveTeachingLoad",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    },
+    "60cf0d871db9a1ea83a674e6ab8c35f0a8c904bdc8": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInstructorSchedule",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "getInstructorSchedule",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    },
+    "60e9a08d7d48e080a209f66cf925a0000de8221610": {
+      "workers": {
+        "app/admin/schedule/teaching/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/teaching/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-teaching.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "calculateTeachingLoad",
+          "filename": "apps/web/actions/schedule-teaching.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/teaching/page": "rsc"
+      },
+      "exportedName": "calculateTeachingLoad",
+      "filename": "apps/web/actions/schedule-teaching.ts"
+    }
+  },
+  "edge": {}
+}

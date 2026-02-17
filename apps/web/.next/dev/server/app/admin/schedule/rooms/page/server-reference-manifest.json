@@ -1,0 +1,155 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "00f1477430444d03e28f78f2ecff887a02b1315377": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getRoomStats",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "getRoomStats",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "400773fb3e715c534af1f1839c720a8d18b96f9799": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getRoomById",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "getRoomById",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "40526fbe49fbd5c36f5c9380bc7f2fa6cc01d3bef6": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getRooms",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "getRooms",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "4072e8197f0f37b44486735a334be462cf6b5bcf24": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createRoom",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "createRoom",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "407c3ba9d2d12beaf96c32d7714d60209ac8c91a8c": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteRoom",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "deleteRoom",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "60dd67f2f191f31405ff07ca4ef5384bfade7e4b75": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateRoom",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "updateRoom",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    },
+    "7caa8f330e9518e051d2e1a00ea73423d893a9bdb7": {
+      "workers": {
+        "app/admin/schedule/rooms/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/schedule/rooms/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/schedule-rooms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkRoomAvailability",
+          "filename": "apps/web/actions/schedule-rooms.ts"
+        }
+      },
+      "layer": {
+        "app/admin/schedule/rooms/page": "rsc"
+      },
+      "exportedName": "checkRoomAvailability",
+      "filename": "apps/web/actions/schedule-rooms.ts"
+    }
+  },
+  "edge": {}
+}

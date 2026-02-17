@@ -1,0 +1,200 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "000f7a1cb658a9a6741f035a805f2983db08d56808": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "logoutAdmin",
+          "filename": "apps/web/actions/admin-auth.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "action-browser"
+      },
+      "exportedName": "logoutAdmin",
+      "filename": "apps/web/actions/admin-auth.ts"
+    },
+    "0042d76f240ee2a93513d3b83c0a780d6960763f9a": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getSystemSettings",
+          "filename": "apps/web/actions/settings.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "action-browser"
+      },
+      "exportedName": "getSystemSettings",
+      "filename": "apps/web/actions/settings.ts"
+    },
+    "0042154dbb46d6d9d776f65967dabb94fc0bca7216": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentStats",
+          "filename": "apps/web/actions/user-students.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getStudentStats",
+      "filename": "apps/web/actions/user-students.ts"
+    },
+    "4070344694d01d06d422a1fa12464fb9cb45c71b8d": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentById",
+          "filename": "apps/web/actions/user-students.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getStudentById",
+      "filename": "apps/web/actions/user-students.ts"
+    },
+    "40708d8f4e3b4e848f3394626b437107f1cb96d830": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteStudent",
+          "filename": "apps/web/actions/user-students.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "deleteStudent",
+      "filename": "apps/web/actions/user-students.ts"
+    },
+    "408f1de5e5e9edacaf5d1cd4c9bedaf6b273de3f9b": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudents",
+          "filename": "apps/web/actions/user-students.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getStudents",
+      "filename": "apps/web/actions/user-students.ts"
+    },
+    "6002b77732ea564707e3f236c6b3a862159cbe7385": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateStudentStatus",
+          "filename": "apps/web/actions/user-students.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "updateStudentStatus",
+      "filename": "apps/web/actions/user-students.ts"
+    },
+    "003094b80b48c52e392af3677c113ca16c53fbf644": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getProgramDistribution",
+          "filename": "apps/web/actions/user-students-charts.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getProgramDistribution",
+      "filename": "apps/web/actions/user-students-charts.ts"
+    },
+    "00e8277dbe1b9cb3bf918cd264e5faa911d126e5e2": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getEnrollmentTrend",
+          "filename": "apps/web/actions/user-students-charts.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getEnrollmentTrend",
+      "filename": "apps/web/actions/user-students-charts.ts"
+    },
+    "0003fcd526ab0f1f66f09a6a895a55cd1bb111ecc0": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getAcademicPerformance",
+          "filename": "apps/web/actions/user-students-dashboard.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getAcademicPerformance",
+      "filename": "apps/web/actions/user-students-dashboard.ts"
+    },
+    "00e28f37f957d1493cd689ef7b7b4a025295e73249": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStudentsNeedingAttention",
+          "filename": "apps/web/actions/user-students-dashboard.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getStudentsNeedingAttention",
+      "filename": "apps/web/actions/user-students-dashboard.ts"
+    },
+    "40b00d296a38483e442b3c3d0b12c0c24553308fb0": {
+      "workers": {
+        "app/admin/users/students/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admin/users/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admin-auth.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/apps/web/actions/settings.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/apps/web/actions/user-students.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/apps/web/actions/user-students-charts.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/apps/web/actions/user-students-dashboard.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getRecentStudents",
+          "filename": "apps/web/actions/user-students-dashboard.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/students/page": "rsc"
+      },
+      "exportedName": "getRecentStudents",
+      "filename": "apps/web/actions/user-students-dashboard.ts"
+    }
+  },
+  "edge": {}
+}

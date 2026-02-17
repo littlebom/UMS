@@ -1,0 +1,35 @@
+{
+  "node": {
+    "0048abae6b6c31cf4a1031d6650cdc9969ec5f17a2": {
+      "workers": {
+        "app/admissions/register/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admissions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTranslations",
+          "filename": "apps/web/actions/translation.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/register/page": "action-browser"
+      },
+      "exportedName": "getTranslations",
+      "filename": "apps/web/actions/translation.ts"
+    },
+    "60650f8d81befd93189fb42fa84db6a2421f3f0d90": {
+      "workers": {
+        "app/admissions/register/page": {
+          "moduleId": "[project]/apps/web/.next-internal/server/app/admissions/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/actions/translation.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/apps/web/actions/admissions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "registerApplicant",
+          "filename": "apps/web/actions/admissions.ts"
+        }
+      },
+      "layer": {
+        "app/admissions/register/page": "action-browser"
+      },
+      "exportedName": "registerApplicant",
+      "filename": "apps/web/actions/admissions.ts"
+    }
+  },
+  "edge": {}
+}

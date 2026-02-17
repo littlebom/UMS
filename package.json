@@ -1,0 +1,23 @@
+{
+  "name": "ums-monorepo",
+  "private": true,
+  "packageManager": "npm@10.2.4",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "recharts": "^3.6.0"
+  }
+}

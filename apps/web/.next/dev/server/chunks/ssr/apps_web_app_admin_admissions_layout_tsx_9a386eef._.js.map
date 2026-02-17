@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/jira/UMS/apps/web/app/admin/admissions/layout.tsx"],"sourcesContent":["export default function AdmissionsLayout({\n    children,\n}: {\n    children: React.ReactNode;\n}) {\n    return (\n        <div>\n            <main>{children}</main>\n        </div>\n    );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,iBAAiB,EACrC,QAAQ,EAGX;IACG,qBACI,8OAAC;kBACG,cAAA,8OAAC;sBAAM;;;;;;;;;;;AAGnB"}}]
+}

@@ -1,0 +1,156 @@
+import { SubNavigation } from "@/components/sub-navigation";
+import { getStudents, getStudentStats } from "@/actions/user-students";
+import { GraduationCap, Users, UserCheck, TrendingUp, Search } from "lucide-react";
+import Link from "next/link";
+
+const subNavItems = [
+    { label: "Active Students", href: "/admin/users/students" },
+    { label: "Graduated", href: "/admin/users/students/graduated" },
+    { label: "On Leave", href: "/admin/users/students/on-leave" },
+    { label: "Reports", href: "/admin/users/students/reports" },
+];
+
+export default async function StudentsPage({
+    searchParams,
+}: {
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+    const params = await searchParams;
+    const currentStatus = (params.status as string) || "STUDYING";
+
+    const [studentsResult, statsResult] = await Promise.all([
+        getStudents({ status: (currentStatus === "ALL" ? undefined : currentStatus) as any }),
+        getStudentStats(),
+    ]);
+
+    const students = studentsResult.success ? studentsResult.students || [] : [];
+    const rawStats = statsResult.success ? statsResult.stats : null;
+    const stats = {
+        total: rawStats?.total || 0,
+        studying: rawStats?.studying || 0,
+        graduated: rawStats?.graduated || 0,
+        onLeave: rawStats?.onLeave || 0,
+    };
+
+    const subNavItems = [
+        { label: "Active Students", href: "/admin/users/students?status=STUDYING" },
+        { label: "On Leave", href: "/admin/users/students?status=ON_LEAVE" },
+        { label: "Graduated", href: "/admin/users/students?status=GRADUATED" },
+        { label: "Reports", href: "/admin/users/students?status=REPORTS" },
+    ];
+
+    return (
+        <div className="flex h-full flex-col">
+            <SubNavigation items={subNavItems} />
+            <div className="flex-1 space-y-6 p-8">
+                <div className="flex items-center justify-between">
+                    <div>
+                        <h1 className="text-3xl font-bold tracking-tight">Students</h1>
+                        <p className="text-muted-foreground">
+                            Manage student records, enrollment, and academic progress.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Combined Stats & Tabs */}
+                <div className="grid gap-4 md:grid-cols-4">
+                    {tabs.map((tab) => (
+                        <Link
+                            key={tab.id}
+                            href={`/admin/users/students?status=${tab.id}`}
+                            className={`rounded-lg border p-6 transition-all hover:shadow-md ${currentStatus === tab.id
+                                ? "border-blue-500 bg-blue-50/50 shadow-sm"
+                                : "bg-card"
+                                }`}
+                        >
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <p className="text-sm font-medium text-muted-foreground">{tab.label}</p>
+                                    <p className="text-2xl font-bold">{tab.count}</p>
+                                </div>
+                                <tab.icon className={`h-8 w-8 ${tab.color}`} />
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+
+                {/* Search and Filters */}
+                <div className="flex items-center gap-4">
+                    <div className="relative flex-1">
+                        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                        <input
+                            type="text"
+                            placeholder="Search by name or student ID..."
+                            className="w-full rounded-md border border-input bg-background pl-10 pr-4 py-2 text-sm"
+                        />
+                    </div>
+                    <Link href="/admin/users/students/create">
+                        <button className="rounded-md bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">
+                            Add Student
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Students Table */}
+                <div className="rounded-lg border bg-card">
+                    <div className="p-6">
+                        <h2 className="text-lg font-semibold mb-4">
+                            {tabs.find(t => t.id === currentStatus)?.label} ({students.length})
+                        </h2>
+
+                        {students.length > 0 ? (
+                            <div className="overflow-x-auto">
+                                <table className="w-full">
+                                    <thead className="border-b">
+                                        <tr className="text-left text-sm text-muted-foreground">
+                                            <th className="pb-3 font-medium">Student ID</th>
+                                            <th className="pb-3 font-medium">Name</th>
+                                            <th className="pb-3 font-medium">Program</th>
+                                            <th className="pb-3 font-medium">Admission Year</th>
+                                            <th className="pb-3 font-medium text-right">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y">
+                                        {students.map((student: any) => (
+                                            <tr key={student.id} className="text-sm hover:bg-gray-50/50">
+                                                <td className="py-3 font-medium">{student.studentId}</td>
+                                                <td className="py-3">
+                                                    <div>
+                                                        <p className="font-medium">{student.firstName} {student.lastName}</p>
+                                                        <p className="text-xs text-muted-foreground">{student.user?.email}</p>
+                                                    </div>
+                                                </td>
+                                                <td className="py-3">
+                                                    <div>
+                                                        <p className="font-medium">{student.program?.nameEn}</p>
+                                                        <p className="text-xs text-muted-foreground">
+                                                            {student.program?.faculty?.nameEn}
+                                                        </p>
+                                                    </div>
+                                                </td>
+                                                <td className="py-3">{student.admissionYear || "-"}</td>
+                                                <td className="py-3 text-right">
+                                                    <Link
+                                                        href={`/admin/users/students/${student.id}`}
+                                                        className="inline-flex items-center justify-center rounded-md border px-3 py-1 text-xs font-medium text-blue-600 hover:bg-blue-50"
+                                                    >
+                                                        View Details
+                                                    </Link>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        ) : (
+                            <div className="text-center py-12 text-muted-foreground">
+                                <GraduationCap className="mx-auto h-12 w-12 mb-4 opacity-30" />
+                                <p>No students found for this status</p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
